@@ -13,7 +13,7 @@ class App
   end
 
   def run
-    @ui.output('Welcome to Tic Tac Toe')
+    @ui.output('Tic Tac Toe 0.0.1 de @studpeace')
     while @running
       menu
     end
@@ -30,7 +30,7 @@ class App
     @ui.clear
     game = GameFactory.from_input(@ui, @PLAYER_CHOICES)
     game.run
-    @ui.output('Thanks for playing.')
+    @ui.output('MERCI !')
   end
 
   def exit

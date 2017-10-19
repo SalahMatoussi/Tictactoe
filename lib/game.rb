@@ -44,9 +44,10 @@ class Game
 
   def end_message
     if @board.tie?
-      @ui.output('The game ended in a tie.')
+      @ui.output('Bravo vous avez fait égalité ! 
+                  Vous etes officiellement comme Fred et Georges avant le 7 .')
     else
-      @ui.output("#{@board.winner} won.")
+      @ui.output("Bravo #{@board.winner} Tu l'as détruit.")
     end
   end
 end

@@ -7,7 +7,7 @@ class ChoiceRequester
     output_options(options)
     choice = @ui.input
     unless valid?(choice, options)
-      @ui.output('Please give valid input.')
+      @ui.output('Parles pas chinois stpl.')
       return request(options)
     end
     options[choice.to_i - 1]
